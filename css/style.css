@@ -12,9 +12,9 @@ html {
 }
 
 body {
+	position: relative;
 	background-image: url(../img/main-bg.jpg);
 	background-size: cover;
-	height: 158rem;
 }
 
 svg {
@@ -27,15 +27,11 @@ a {
 
 .header-conteiner {
 	position: relative;
-	width: 115rem;
+	width: 85%;
 	height: 26rem;
 	margin: 0 auto;
 	background: linear-gradient(to right, #00a0de 50%, #1390c1 50%);
 	clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
-}
-
-nav {
-	position: relative;
 }
 
 .header-menu {
@@ -44,7 +40,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
-	width: 71.7rem;
+	width: 65%;
 	margin: 0 auto;
 	font-size: 1.6rem;
 	text-transform: uppercase;
@@ -54,7 +50,7 @@ nav {
 	position: relative;
 	top: 0;
 	display: inline-block;
-	width: 15.4rem;
+	width: 20%;
 	height: 15rem;
 	border: 0.1rem solid #fff;
 	transition: .3s ease-in-out;
@@ -95,11 +91,9 @@ nav {
 .header-logo {
 	position: absolute;
 	top: 8rem;
-	left: 0;
-	right: 0;
-	width: 16.1rem;
+	left: calc(50% - 8rem);
+	width: 16rem;
 	height: 18rem;
-	margin: 0 auto;
 	padding: 1.3rem 1.8rem;
 	background-color: #fff;
 }
@@ -117,7 +111,7 @@ nav {
 	background: repeating-linear-gradient(-60deg, #197d53, #1c7f56 .3rem);
   box-shadow: 0 0 .5rem 0 #333;
   transition: .4s ease-in-out;
-  z-index: 2;
+  z-index: 1;
 }
 .side-logo:hover {
 	top: 14rem;
@@ -136,17 +130,18 @@ nav {
 	transform: scale(.7) skewY(-20deg);
 }
 
-.left-branch, .right-branch {
-	position: absolute;
-	top: -10rem;
-	left: -10rem;	
-	transform: scale(.7);
-}
 .left-branch {
+	position: absolute;
+	top: 0;
+	left: 0;	
+	width: 32%;
 	clip-path: polygon(0% 0%, 45% 0%, 100% 60%, 100% 100%, 0% 100%);
 }
 .right-branch {
-	left: 77.9rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 37%;
 	clip-path: polygon(0% 60%, 60% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
@@ -163,7 +158,18 @@ nav {
 	position: relative;
 	background-color: #ddae0c;
 	clip-path: polygon(0% 20%, 50% 0%, 100% 20%, 100% 100%, 0% 100%);
+	cursor: pointer;
+	transition: .3s;
 }
+.swiper-slide:hover .up {
+	width: 0;
+	transform: rotateY(180deg);
+}
+.swiper-slide:hover .down {
+	width: 35%;
+	transform: rotateY(-180deg);
+}
+
 .slide-inner {
 	position: absolute;
 	bottom: 4%;
@@ -183,6 +189,12 @@ nav {
 	display: block;
 	width: 50%;
 	margin: 3rem auto 1rem;
+	transition: .6s;
+}
+.slide-inner .down {
+	margin-top: .5rem;
+	width: 0;
+	transform: rotateY(180deg);
 }
 .slide-inner p {
 	background-color: #a48211;
