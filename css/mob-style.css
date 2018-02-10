@@ -12,8 +12,8 @@ html {
 }
 
 body {
-	max-width: 46vh;
-	background-image: url(../img/main-bg.jpg);
+	position: relative;
+  background-image: url(../img/main-bg.jpg);
 	background-size: cover;
 }
 
@@ -45,7 +45,7 @@ nav {
 	position: relative;
 	z-index: 1;
 	display: block;
-	width: 30vw;
+	width: 30%;
 	margin: 3vh auto 0;
 	padding: 1vh;
 	font-size: 1.2rem;
@@ -58,14 +58,14 @@ nav {
 	transition: .3s ease-in-out;
 }
 .active, .accordion:hover {
-	width: 50vw;
+	width: 50%;
 	background-image: linear-gradient(to right,  #1390c1 50%,  #00a0de 50%);
-	box-shadow: 0 0 1.5vw 0 #fff;
+	box-shadow: 0 0 1.5% 0 #fff;
 }
 
 .header-menu {
 	list-style: none;
-	width: 50vw;
+	width: 50%;
 	max-height: 0;
 	overflow: hidden;
 	margin: 0 auto;
@@ -103,7 +103,7 @@ nav {
 	left: calc(50% - 10%);
 	width: 20%;
 	height: 13vh;
-	padding: 1vw;
+	padding: 1%;
 	background-color: #fff;
 	z-index: 1;
 	transition: .3s ease-in-out;
@@ -119,19 +119,19 @@ nav {
 
 .side-logo {
 	position: absolute;
-	left: -15vw;
-	top: 23vw;
-	width: 30vw;
-	height: 18vw;
+	left: -15%;
+	top: 5%;
+	width: 30%;
+	height: 3%;
 	transform: skewY(20deg);
-	background: repeating-linear-gradient(-60deg, #197d53, #1c7f56 .3vw);
-  box-shadow: 0 0 .5vw 0 #333;
+	background: repeating-linear-gradient(-60deg, #197d53, #1c7f56 .3%);
+  box-shadow: 0 0 .5% 0 #333;
   transition: .4s ease-in-out;
   z-index: 1;
 }
 .side-logo:hover {
-	top: 27vw;
-	left: -5vw;
+	top: 5.5%;
+	left: -5%;
 }
 .side-logo a {
 	position: relative;
@@ -141,8 +141,8 @@ nav {
 }
 .side-logo a img {
 	position: absolute;
-	top: 2vw;
-	right: 1vw;
+	top: 10%;
+	right: 4%;
 	width: 45%;
 	transform: skewY(-20deg);
 }
@@ -154,7 +154,7 @@ nav {
 	width: 30vh;
 	height: 21.8vh;
 	margin: 25% auto 0;
-	padding: 0 7vh;
+	padding: 0 8vh;
 }
 .swiper-slide {
 	position: relative;
@@ -180,12 +180,12 @@ nav {
 	height: 100%;
 	margin: 0 auto;
 	background-image: linear-gradient(to right, #ddae0c 50%, #c8a016 50%);
-	border: .2vw solid #fff;
-	border-left-width: .2vw;
+	border: .2vh solid #fff;
 	clip-path: polygon(0% 27%, 50% 9%, 100% 27%, 100% 100%, 0% 100%);
 }
 .slide-inner svg {
-	top: 3vw;
+	top: 6%;
+	left: -10%;
 }
 .slide-inner img {
 	display: block;
@@ -200,16 +200,15 @@ nav {
 }
 .slide-inner p {
 	background-color: #a48211;
-	height: 8.3vh;
+	height: 43%;
 	color: #fff;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 600;
-	font-size: 1.8rem;
-	border-right: .2vw solid #fff;
+	font-size: 1.6rem;
 }
 .slide-inner p span {
-	font-size: 2.1rem;
+	font-size: 1.8rem;
 }
 
 .meterage {
@@ -241,10 +240,10 @@ nav {
 
 .swiper-button-prev, .swiper-button-next {
 	position: relative;
-	top: -31vw;
-	left: -15vw;
-	width: 15vw;
-	height: 24vw;
+	top: -61%;
+	left: -50%;
+	width: 55%;
+	height: 54%;
 	background-image: url(../img/l-arrow.png);
 	background-size: cover;
 	transition: .4s ease-in-out;
@@ -253,8 +252,8 @@ nav {
 	transform: scale(1.1);
 }
 .swiper-button-next {
-	top: -48vw;
-	left: 33vw;
+	top: -100%;
+	left: 98%;
 	background-image: url(../img/r-arrow.png);
 }
 
@@ -288,8 +287,8 @@ article {
 	clip-path: polygon(0% 30%, 100% 0%, 100% 70%, 0% 100%);
 }
 article svg {
-	left: 0rem;
-	top: 0rem;
+	left: 0;
+	top: 0;
 }
 article h1 {
 	font-size: 1.6rem;
@@ -298,8 +297,7 @@ article h1 {
 }
 article div p {
 	width: 100%;
-	margin: 1vw;
-	text-align: justify;
+  text-align: justify;
 }
 
 /* PARALLAX EFFECT ELEMENTS */
@@ -321,13 +319,13 @@ article div p {
 
 .oak-leaf, .oak-leaves {
 	position: absolute;
-	top: 114rem;
+	top: 124rem;
 	left: 13%;
 	width: 18%;
 	z-index: 1;
 }
 .oak-leaves {
-	top: 99rem;
+	top: 119rem;
 	left: 25%;
 	z-index: -1;
 }
@@ -337,6 +335,9 @@ footer {
 	background-color: #2d2d2b;
 	padding: 2vh 0;
 	text-align: center;
+}
+footer p:last-child {
+	color: #505050;
 }
 .footer-menu, address {
 	padding: 0 4vw;
@@ -351,7 +352,7 @@ footer {
 }
 .footer-menu ul li {
 	display: inline-block;
-	border-bottom: .3vw dashed #bebebe;
+	border-bottom: .3vh dashed #bebebe;
 }
 .footer-menu ul li:hover {
 	border-bottom-style: solid;
@@ -382,7 +383,7 @@ address div {
 }
 .email {
 	color: #2589ba;
-	border-bottom: .3vw dashed #2589ba;
+	border-bottom: .3vh dashed #2589ba;
 }
 .email:hover {
 	border-bottom-style: solid;
